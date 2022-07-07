@@ -2,16 +2,21 @@
 {%block body_block%}
 
 <div class="row">
-    <div class="col-2"></div>
-    <div class="col-8">
-        <form action=""method="POST">
+    <div class="col-4">
+
+             <form action=""method="POST">
           {%csrf_token%}
             {{form.as_p}}
-            <input type="submit" value="Add job">
+<!--            <input type="button" value="Add job">-->
+                    <input class="btn btn-outline-danger" type="submit" value="Addjob">
+
+    </div>
+    <div class="col-4">
+
 
         </form>
     </div>
-    <div class="col-2"></div>
+    <div class="col-4"></div>
 </div>
 
 

@@ -1,0 +1,22 @@
+{%extends 'candidatebase.html'%}
+{%block body_block%}
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6 mt-5">
+        <form action="" method="post" enctype="multipart/form-data">
+          {%csrf_token%}
+            {{form.as_p}}
+
+            <button style="background-color:#F4EB16; color:blue" class="btn btn-outline-info" type="submit">Add profile</button>
+
+
+        </form>
+    </div>
+    <div class="col-3"></div>
+</div>
+
+
+
+
+{%endblock%}

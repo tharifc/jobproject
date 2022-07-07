@@ -16,7 +16,7 @@
             <tr>
                 <td>{{job.id}}</td>
                 <td>{{job.job_title}}</td>
-                <td>{{job.company_name}}</td>
+                <td>{{job.company.employer.company_name}}</td>
                 <td>{{job.location}}</td>
                 <td>{{job.salary}}</td>
                 <td><a href="{%url 'job-details' job.id%}" class="btn btn-outline-success">View</a>
